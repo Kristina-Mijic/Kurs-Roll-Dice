@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Game-dice</title>
+</head>
+<body>
+  <div class="dice-wrapper" id="dice-wrapper">
+    <!--Player one-->
+    <div class="player-one player-card" id="player-one">
+      <h1 class="title-player">PLAYER 1</h1>
+      <img src="1.png" class="dice-image" id="1" alt="dice1" width="0" height="0">
+      <img src="2.png" class="dice-image" id="2" alt="dice2" width="0" height="0">
+      <img src="3.png" class="dice-image" id="3" alt="dice3" width="0" height="0">
+      <img src="4.png" class="dice-image" id="4" alt="dice4" width="0" height="0">
+      <img src="5.png" class="dice-image" id="5" alt="dice5" width="0" height="0">
+      <img src="6.png" class="dice-image" id="6" alt="dice6" width="0" height="0">
+
+      <canvas class="canvas-wrap" id="canvas-id-left" width="300px" height="300px" style="border: 2px solid black;"></canvas>
+
+      <p class="score" id="score-id-left">SCORE:</p>
+      <p class="winner-text" id="player-1-winner"></p>
+      
+    </div>
+
+    <button class="roll-dice-btn" id="roll-dice-btn">ROLL DICE</button>
+    <p class="new-game-text" id="new-game-text"></p>
+    <p class="info-text" id="info-text">Try to get score 10!</p>
+
+    <!--Player two-->
+    <div class="player-two player-card" id="player-two">
+      <h1 class="title-player">PLAYER 2</h1>
+      <img src="1.png" class="dice-image" id="1-right" alt="dice1right" width="0" height="0">
+      <img src="2.png" class="dice-image" id="2-right" alt="dice2right" width="0" height="0">
+      <img src="3.png" class="dice-image" id="3-right" alt="dice3right" width="0" height="0">
+      <img src="4.png" class="dice-image" id="4-right" alt="dice4right" width="0" height="0">
+      <img src="5.png" class="dice-image" id="5-right" alt="dice5right" width="0" height="0">
+      <img src="6.png" class="dice-image" id="6-right" alt="dice6right" width="0" height="0">
+
+      <canvas class="canvas-wrap" id="canvas-id-right" width="300px" height="300px" style="border: 2px solid black;"></canvas>
+      <p class="score" id="score-id-right">SCORE:</p>
+      <p class="winner-text" id="player-2-winner"></p>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
